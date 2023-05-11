@@ -44,3 +44,37 @@ main {
     min-width: 160px;
   }
 }
+
+.btnr {
+  border-radius: 12px;
+  border: 25px solid rgb(230, 176, 95);
+}
+.btnc {
+  border-radius: 12px;
+  border: 25px solid rgb(230, 176, 95);
+  
+  top: 0;
+  right: 0;
+}
+
+.search {
+  border-radius: 30px;
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.divimage {
+  background-image: url("../images/Frame 8850.png"); 
+  background-color: #e06924; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}

@@ -9,9 +9,14 @@ app.config(function($routeProvider){
     .when("/dash",{
         templateUrl:"dash.html",
         controller:"DashController"
-    }).when("/tienda",{
+    })
+    .when("/tienda",{
         templateUrl:"tienda.html",
         controller:"TiendaController"
+    })
+    .when("/newpro",{
+        templateUrl:"nuevohelp.html",
+        controller:"NuproController"
     });
 
 })
@@ -40,4 +45,8 @@ app.controller("TiendaController",function($scope){
             $scope.ina = true;
         }
     }
+});
+
+app.controller("NuproController",function($scope){
+    $scope.saludos = "Hola new";
 });
