@@ -9,7 +9,11 @@ app.config(function($routeProvider){
     .when("/dash",{
         templateUrl:"dash.html",
         controller:"DashController"
+    }).when("/tienda",{
+        templateUrl:"tienda.html",
+        controller:"TiendaController"
     });
+
 })
 app.controller("PerfilController",function($scope){
     $scope.saludos = "Hola motosmart";
@@ -19,5 +23,21 @@ app.controller("PerfilController",function($scope){
 
 app.controller("DashController",function($scope){
     $scope.saludos = "Hola Dash";
- 
+});
+
+app.controller("TiendaController",function($scope){
+    $scope.saludos = "Hola tienda";
+    $scope.act = true;
+    $scope.ina = false;
+
+    $scope.isShowHide = function (param) {
+        if (param == "act") {
+            $scope.act = true;
+            $scope.ina = false;
+        }
+        else {
+            $scope.act = false;
+            $scope.ina = true;
+        }
+    }
 });

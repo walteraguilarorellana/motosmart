@@ -1,0 +1,46 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.banner
+{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.profile
+{
+ 
+  position: absolute;
+  top: 60px;
+  left: 80px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.tabsdemoCenterTabs md-tab-item {
+  min-width: 72px;
+}
+@media (min-width: 960px) {
+  .tabsdemoCenterTabs md-tab-item {
+    min-width: 160px;
+  }
+}
